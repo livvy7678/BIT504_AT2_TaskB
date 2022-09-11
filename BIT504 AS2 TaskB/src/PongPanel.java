@@ -15,7 +15,7 @@
 	  
 	   private final static Color BACKGROUND_COLOUR = Color.BLACK;
 	   private final static int TIMER_DELAY = 5;
-	   private final static int BALL_MOVEMENT_SPEED = 2;
+	   private final static int BALL_MOVEMENT_SPEED = 5;
 	   private final static int SCORE_TEXT_X = 100;
        private final static int SCORE_TEXT_Y = 100;
        private final static int SCORE_FONT_SIZE = 50;
@@ -88,14 +88,14 @@
 	   @Override
 	      public void keyPressed(KeyEvent event) {
 	          if(event.getKeyCode() == KeyEvent.VK_W) {
-	              paddle1.setyVelocity(-2);
+	              paddle1.setyVelocity(-4);
 	          } else if(event.getKeyCode() == KeyEvent.VK_S) {
-	              paddle1.setyVelocity(2);
+	              paddle1.setyVelocity(4);
 	          }
 	          if(event.getKeyCode() == KeyEvent.VK_UP) {
-	              paddle2.setyVelocity(-2);
+	              paddle2.setyVelocity(-4);
 	          } else if(event.getKeyCode() == KeyEvent.VK_DOWN) {
-	              paddle2.setyVelocity(2);
+	              paddle2.setyVelocity(4);
 	          }
 	      }
 	  
